@@ -12,7 +12,7 @@
                 focus-visible:outline-brand-2 outline-2
             " type="text" v-model="data.title">
             </label>
-            
+
             <input v-model="data.datetime" type="datetime-local" />
 
             <label class="flex flex-col gap-y-0.5 text-gray-500 focus-within:text-brand-2">
