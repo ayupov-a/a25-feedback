@@ -31,6 +31,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Feedback whereUpdatedAt($value)
  */
 	class Feedback extends \Eloquent {}
+	class Service extends \Eloquent {}
 }
 
 namespace App\Models{

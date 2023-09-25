@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
-    Feedback\FeedbackController
+    Feedback\FeedbackController,
+    Service\ServiceController
 };
 
 /*
@@ -18,4 +19,5 @@ use App\Http\Controllers\{
 
 Route::name('api.')->group(function () {
     Route::resource('feedbacks', FeedbackController::class)->only(['store', 'show']);
+    Route::get('services', [ServiceController::class, 'index']);
 });
